@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netlify --version)",
+      "Bash(netlify status *)",
+      "Bash(netlify api *)",
+      "Bash(python3 -c \"import sys,json; sites=json.load\\(sys.stdin\\); [print\\(f'{s[\\\\\"name\\\\\"]} | {s[\\\\\"url\\\\\"]} | {s[\\\\\"id\\\\\"]}'\\) for s in sites]\")",
+      "Bash(netlify logout *)",
+      "Bash(netlify login *)",
+      "Bash(python3 -c \"import sys,json; u=json.load\\(sys.stdin\\); print\\(f'Name: {u[\\\\\"full_name\\\\\"]}\\\\nEmail: {u[\\\\\"email\\\\\"]}\\\\nSlug: {u[\\\\\"slug\\\\\"]}'\\)\")",
+      "Bash(python3 -c \"import sys,json; accounts=json.load\\(sys.stdin\\); [print\\(f'Team: {a[\\\\\"name\\\\\"]} | Slug: {a[\\\\\"slug\\\\\"]} | Plan: {a[\\\\\"type_name\\\\\"]} | Role: {a[\\\\\"role\\\\\"]}'\\) for a in accounts]\")",
+      "Bash(python3 -c \"import sys,json; sites=json.load\\(sys.stdin\\); [print\\(f'{s[\\\\\"name\\\\\"]} | {s.get\\(\\\\\"url\\\\\",\\\\\"no url\\\\\"\\)} | {s[\\\\\"id\\\\\"]}'\\) for s in sites]\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d, indent=2\\)\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(dig keobs.net +short)",
+      "Bash(dig www.keobs.net +short)",
+      "Bash(dig NS *)",
+      "Bash(dig keobs.net @dns1.p08.nsone.net +short)",
+      "Bash(dig www.keobs.net @dns1.p08.nsone.net +short)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(gh auth *)",
+      "Bash(brew install *)",
+      "Bash(sudo chown *)",
+      "Bash(xcode-select *)",
+      "Bash(curl -sL https://github.com/cli/cli/releases/download/v2.74.1/gh_2.74.1_macOS_amd64.tar.gz -o /tmp/gh.tar.gz)",
+      "Bash(tar -xzf /tmp/gh.tar.gz -C /tmp)",
+      "Bash(sudo mv *)",
+      "Bash(gh --version)",
+      "Bash(curl -sL \"https://github.com/cli/cli/releases/download/v2.74.1/gh_2.74.1_macOS_amd64.zip\" -o /tmp/gh.zip)",
+      "Bash(unzip -o /tmp/gh.zip -d /tmp/gh_extract)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
